@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   LintCode 炼码 - ChatGPT！更高效的学习体验！
+  </title>
+  <meta content="Coding, Algorithm, Data Structure, OJ, Online Judge, Training, Interview, Code, Google, Facebook, Linkedin, Amazon, Microsoft, LintCode, 炼码, 面试题, 在线评测, 算法, 数据结构, 面试, 代码, ChatGPT, CHAT, GPT, CHATGPT官网, CHATGPT入口, CHATGPT国内版" name="keywords"/>
+  <meta content="Powerful coding training system. LintCode has the most interview problems covering Google, Facebook, Linkedin, Amazon, Microsoft and so on. We provide Chinese and English versions for coders around the world." name="description"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <link href="//jsn.lintcode.com/static/img/favicon.ico" rel="icon shortcut" type="image/ico"/>
+  <link href="//jsn.lintcode.com/static/todo/css/loading.css?v=20180106" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/css/simplemde.min.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/todo/css/font.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/todo/css/font-awesome.min.css?v=4.6" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/css/googleapis.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/todo/css/bootstrap-grid.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/static/css/tcplayer.css" rel="stylesheet"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/runtime-a5bb167f694575ae21a7.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-5d78907a-665109808db7e7d637ab.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-45512a9f-c123d03bbe81664e6498.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-5db3c48b-c031ee3d743a657fc7c1.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-8c3e81b9-951e028f91f10528d380.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-1338e340-d70080ac3e14eb9737e6.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-7f18916e-1d8dc28f099f4fe33d8b.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/antVendors-f79110f3-77b4d41f8154019e5354.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-cf53adf0-afcbaefc2b239ba17cbb.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-49d0a293-20f4caefc8f8803e27b4.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-d2eb5610-ee8e30b55e596192f58e.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-c4e8c27d-5240db3f56d453cc0c68.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-0bc0478e-24483eee52722c416db0.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-386b9151-64268ead7a46cf82a0fe.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/initialVendors-27545368-4867abb295e0c94f84be.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/lintcode-react/main-a4a65533137e88940d03.js">
+  </script>
+  <link href="//jsn.lintcode.com/lintcode-react/antVendors-5d78907a.03925a35951d16e024f0.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/lintcode-react/antVendors-1338e340.03925a35951d16e024f0.css" rel="stylesheet"/>
+  <link href="//jsn.lintcode.com/lintcode-react/main.03925a35951d16e024f0.css" rel="stylesheet"/>
+ </head>
+ <script>
+  try {
+      window.__INITIAL_AUTH_STORE__ = JSON.parse('{\u0022code\u0022:200,\u0022data\u0022:{\u0022aliyun_authenticate_sig_app_key\u0022:\u0022FFFF0N0000000000A55F\u0022,\u0022business_cooperation_info\u0022:{\u0022content\u0022:\u0022-\u0022,\u0022qrcode\u0022:[{\u0022identity\u0022:\u0022new_storage_v2\/public\/202312\/ba00acf2f7e941ba9661b75ef12c61a5\/LintCode-建联二维码司南.jpg\u0022,\u0022name\u0022:\u0022LintCode-建联二维码司南.jpg\u0022,\u0022url\u0022:\u0022https:\/\/media-cn.lintcode.com\/new_storage_v2\/public\/202312\/ba00acf2f7e941ba9661b75ef12c61a5\/LintCode-建联二维码司南.jpg\u0022}]},\u0022business_phone_number\u0022:null,\u0022dismiss_wechat_binding_reminder_time_length\u0022:604800,\u0022group\u0022:{},\u0022invitation_reward_chatgpt_resource_point\u0022:10000,\u0022invitation_reward_svip_duration\u0022:7,\u0022lc_saas_host\u0022:\u0022\/\/biz.lintcode.com\u0022,\u0022lc_video_pub_host\u0022:\u0022\/\/video-player.lintcode.com\u0022,\u0022new_user_first_problem_id\u0022:2045,\u0022oauth_host\u0022:\u0022\/\/third-oauth.lintcode.com\u0022,\u0022selling_system_host\u0022:\u0022\/\/sell.lintcode.com\u0022,\u0022service_uuid\u0022:\u0022b80de25b557c466481b7f4d1f0bd6150\u0022,\u0022to_b_business_phone_number\u0022:\u002215167155714\u0022,\u0022urls\u0022:{\u0022cache_url\u0022:\u0022\/\/c1.lintcode.com\u0022,\u0022chat_url\u0022:\u0022\/\/gpt-gg.lintcode.com\u0022,\u0022langs_url\u0022:\u0022\/\/langserver.lintcode.com\u0022,\u0022read_only\u0022:\u0022\/\/apiv1.lintcode.com\u0022,\u0022read_write\u0022:\u0022\/\/apiv1.lintcode.com\u0022,\u0022token_auth\u0022:\u0022\/\/auth0.lintcode.com\u0022,\u0022ws_urls\u0022:[\u0022https:\/\/socket-ali-test.jiuzhang.com\u0022]},\u0022user_guide_content\u0022:{\u0022problem_id\u0022:2045},\u0022vc_random_key\u0022:\u0022random_key\u0022,\u0022web_base_host\u0022:\u0022\/\/base.lintcode.com\u0022,\u0022wechat_server_host\u0022:\u0022https:\/\/wechat.lintcode.com\u0022,\u0022whiteboard_problem_id\u0022:2970},\u0022detail\u0022:\u0022\u0022,\u0022success\u0022:true}');
+    } catch {
+      window.__INITIAL_AUTH_STORE__ = {};
+    }
+ </script>
+ <body>
+  <div id="root">
+   <div class="root-init-container">
+    <div class="absolute-center root-init-child-container absoluted">
+     <div class="index-logo init-index-logo">
+      <img alt="" height="50" src="//jsn.lintcode.com/static/img/loading-logo.gif"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="sub-root">
+  </div>
+  <script src="https://g.alicdn.com/AWSC/AWSC/awsc.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/static/js/tcplayer.min.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/static/js/hls-1.2.1.min.js">
+  </script>
+  <script defer="defer" src="//jsn.lintcode.com/static/js/jweixin-1.4.0.js">
+  </script>
+  <script async="" src="//jsn.lintcode.com/static/libs/googleAnalytics/analytics.min.js">
+  </script>
+  <script>
+   window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga('create', 'UA-126366399-2', 'lintcode.com');
+      ga('send', 'pageview');
+  </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0JRP90NVZX">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-0JRP90NVZX');
+  </script>
+ </body>
+</html>
